@@ -1,4 +1,4 @@
-package java.SortedMerge;
+package com.sortedMerge;
 
 import java.util.Arrays;
 
@@ -19,9 +19,9 @@ public class SortedMerge {
 
     public void mergeBToA() {
         int indexA = A.length - B.length;
-        for (int item: B
-             ) {
+        for (int item: B) {
             A[indexA] = item;
+            indexA++;
         }
         Arrays.sort(A);
     }
